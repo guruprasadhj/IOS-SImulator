@@ -1,0 +1,69 @@
+{
+   "checksum": "a9aa66cf890411666a3842b9534d56e2",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13319455646171182",
+            "date_last_used": "0",
+            "guid": "c0d8f207-b89a-4eed-a6ff-44c16d857d57",
+            "id": "7",
+            "name": "ASUS Software Portal - Exclusive technology",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/Software-and-Innovations-Portal/"
+         }, {
+            "date_added": "13319455646170959",
+            "date_last_used": "0",
+            "guid": "26314839-cebe-46b1-b8ba-33e54ada9b60",
+            "id": "6",
+            "name": "MyASUS Software - Get the best from ASUS PC",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/ASUS-Software/"
+         }, {
+            "date_added": "13319455646170163",
+            "date_last_used": "0",
+            "guid": "4c2b4ade-50bb-44c7-830f-ab0330674507",
+            "id": "5",
+            "name": "McAfee LiveSafe",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://home.mcafee.com/root/campaign.aspx?cid=246814"
+         } ],
+         "date_added": "13319455645978787",
+         "date_last_used": "0",
+         "date_modified": "13319457754266927",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13319455645978789",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13319455645978794",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
