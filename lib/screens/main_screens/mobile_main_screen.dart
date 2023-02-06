@@ -25,9 +25,9 @@ class _MobileViewMainScreenState extends State<MobileViewMainScreen> {
 
   getWeather() async {
     setState(()=>isLoading=true);
-    await Future.delayed(Duration(seconds: 2));
     w = await wf.currentWeatherByCityName(cityName);
-    setState(() {isLoading=false;});
+    isLoading=false;
+    setState(() {});
   }
 
   Widget iconWidget(String title,String location){
@@ -62,18 +62,17 @@ class _MobileViewMainScreenState extends State<MobileViewMainScreen> {
   @override
   void initState() {
     super.initState();
-
     getWeather();
   }
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: isLoading?Container(color:Colors.black,alignment:Alignment.center,child: CircularProgressIndicator(),):Container(
+      child: isLoading?Center(child: CircularProgressIndicator(),):Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
 
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: Colors.blueAccent,
           image: DecorationImage(image: AssetImage("assets/wallpapers/wallpaper-1.jpg",),fit:BoxFit.cover )
         ),
         child: Stack(
@@ -96,9 +95,9 @@ class _MobileViewMainScreenState extends State<MobileViewMainScreen> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text(
-                            "${DateTime.now().hour>12?DateTime.now().hour-12<10?"0${DateTime.now().hour-12}":DateTime.now().hour-12:DateTime.now().hour}:${DateTime.now().minute<10?"0${DateTime.now().minute}":DateTime.now().minute} ${DateTime.now().hour>12?"PM":"AM"}",
+                            "${DateTime.now().hour>12?DateTime.now().hour-12:DateTime.now().hour}:${DateTime.now().minute}",
                             // "7:30",
-                            style: const TextStyle(fontSize: 20, color: Colors.white),
+                            style: TextStyle(fontSize: 20, color: Colors.white),
                           ),
                           Spacer(),
                           Padding(
